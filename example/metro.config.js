@@ -5,10 +5,10 @@
  * @format
  */
 
-const path = require('path')
-const exclusionList = require('metro-config/src/defaults/exclusionList')
+const path = require('path');
+const exclusionList = require('metro-config/src/defaults/exclusionList');
 
-const moduleRoot = path.resolve(__dirname, '..')
+const moduleRoot = path.resolve(__dirname, '..');
 
 module.exports = {
   watchFolders: [moduleRoot],
@@ -30,4 +30,4 @@ module.exports = {
       },
     }),
   },
-}
+};

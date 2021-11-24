@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react'
-import { Counter } from 'react-native-style-text'
+import React, { useEffect } from 'react';
+import { Counter } from 'react-native-style-text';
 
 const App = () => {
   useEffect(() => {
-    console.log('')
-  })
+    console.log('');
+  });
 
-  return <Counter />
-}
+  return <Counter />;
+};
 
-export default App
+export default App;
