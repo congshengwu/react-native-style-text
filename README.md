@@ -3,6 +3,12 @@ A wrapper component of RN Text component, use regular expression to match and ch
 
 This component is a wrapper for the React Native text component, you can pass regular expression into the component to match the text content you want, and change the style or add press event for the matched text.
 
+## Installation
+
+`yarn add react-native-style-text`
+
+`npm i react-native-style-text`
+
 ## Demo：
 
 <div>
