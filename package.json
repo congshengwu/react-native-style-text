@@ -11,10 +11,9 @@
     "lib"
   ],
   "scripts": {
-    "compile-win": "tsc -p .",
-    "compile-mac": "rm -rf lib && tsc -p .",
+    "compile": "tsc -p .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "prepare": "yarn compile-win",
+    "prepare": "yarn compile",
     "test": "jest"
   },
   "devDependencies": {
