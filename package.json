@@ -1,7 +1,7 @@
 {
   "name": "react-native-style-text",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "A wrapper component of RN Text component, use regular expression to match and change the style, props of partial text content.",
   "homepage": "https://github.com/congshengwu/react-native-style-text#readme",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
