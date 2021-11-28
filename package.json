@@ -2,11 +2,8 @@
   "name": "react-native-style-text",
   "version": "0.0.1",
   "description": "A wrapper component of RN Text component, use regular expression to match and change the style, props of partial text content.",
-  "homepage": "https://github.com/congshengwu/react-native-style-text#readme",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "author": "Shengwu Cong <congsw@foxmail.com>",
-  "license": "MIT",
   "files": [
     "lib"
   ],
@@ -16,6 +13,25 @@
     "prepare": "yarn compile",
     "test": "jest"
   },
+  "keywords": [
+    "react-native",
+    "react-native-component",
+    "ios",
+    "android",
+    "text",
+    "style",
+    "wrapper"
+  ],
+  "author": "Shengwu Cong <congsw@foxmail.com>",
+  "homepage": "https://github.com/congshengwu/react-native-style-text#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/congshengwu/react-native-style-text.git"
+  },
+  "bugs": {
+    "url": "https://github.com/congshengwu/react-native-style-text/issues"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/runtime": "^7.16.3",
