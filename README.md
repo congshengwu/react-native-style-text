@@ -12,7 +12,7 @@ This component is a wrapper for the React Native text component, you can pass re
 ## Demo：
 
 <div>
-  <img src="https://github.com/congshengwu/react-native-style-text/raw/master/screenshots/demo1.jpg" alt="ViewPager" width="300">
+  <img src="https://raw.githubusercontent.com/congshengwu/react-native-style-text/master/screenshots/demo1.jpg" alt="ViewPager" width="300">
 </div>
 
 ## Usage:
