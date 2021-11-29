@@ -4,28 +4,37 @@ import { Text, TextProps } from 'react-native';
 
 import Stack from './Stack';
 
-interface MatchTextStyleItem {
+interface MatchTextItem {
   match: string | RegExp;
   textProps: TextProps;
 }
 
 interface StyleTextProps extends TextProps {
-  matchTextStyle?: Array<MatchTextStyleItem>;
+  matchText?: Array<MatchTextItem> | MatchTextItem;
 }
 
 const StyleText = (props: StyleTextProps) => {
-  const { children, matchTextStyle } = props;
+  const { children, matchText } = props;
 
   const handleStyle = () => {
     let childrenClone = children;
 
-    matchTextStyle?.forEach((item) => {
+    if (matchText && Array.isArray(matchText)) {
+      matchText?.forEach((item) => {
+        childrenClone = renderContent(
+          _.cloneDeep(childrenClone),
+          item.match,
+          item.textProps
+        );
+      });
+    } else if (matchText) {
       childrenClone = renderContent(
         _.cloneDeep(childrenClone),
-        item.match,
-        item.textProps
+        matchText.match,
+        matchText.textProps
       );
-    });
+    }
+
     return childrenClone;
   };
 
